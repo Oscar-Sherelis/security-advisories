@@ -8,9 +8,9 @@ interface NavigationProps {
 
 export const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChange }) => {
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-white shadow-sm border-b border-gray-200 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Shield className="w-8 h-8 text-blue-600" />
             <span className="text-xl font-bold text-gray-900">
@@ -22,7 +22,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChang
               onClick={() => onViewChange('overview')}
               className={`px-4 py-2 rounded-md font-medium transition-colors ${
                 currentView === 'overview'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-blue-600'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
@@ -32,7 +32,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChang
               onClick={() => onViewChange('search')}
               className={`px-4 py-2 rounded-md font-medium transition-colors ${
                 currentView === 'search'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-blue-600'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
