@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Advisory } from '../types/Advisory';
+import type { Advisory } from '../types/Advisory';
 import { fetchAdvisories } from '../services/githubApi';
 import { AdvisoryCard } from '../components/AdvisoryCard';
 
