@@ -1,5 +1,5 @@
 import React from 'react';
-import { Advisory } from '../types/Advisory';
+import type { Advisory } from '../types/Advisory';
 import { getSeverityColor, getSeverityIcon } from '../utils/severity';
 
 interface AdvisoryCardProps {

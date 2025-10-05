@@ -1,4 +1,4 @@
-import { Advisory } from '../types/Advisory';
+import type { Advisory } from '../types/Advisory';
 
 export const fetchAdvisories = async (params: {
   perPage?: number;
